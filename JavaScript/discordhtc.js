@@ -3,7 +3,7 @@ const client = new DHTC(token);
 
 client.on('createdMessage', (msg) => {
   if (msg.content === 'ping') {
-    client.makeMessage(msg.channel_id, 'pong');
+    client.makeMessage(msg.channel_id, 'Pong!');
   }
 });
 
